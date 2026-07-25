@@ -15,7 +15,17 @@
               "state": {
                 "file": "README.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "README"
@@ -65,7 +75,7 @@
             }
           },
           {
-            "id": "d4abfdf0951c39ed",
+            "id": "1999794485e7997d",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -105,20 +115,6 @@
               },
               "icon": "links-coming-in",
               "title": "Backlinks for README"
-            }
-          },
-          {
-            "id": "3ccdc07f9bdebe31",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "README.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from README"
             }
           },
           {
@@ -164,16 +160,27 @@
               "icon": "lucide-list",
               "title": "Outline of README"
             }
+          },
+          {
+            "id": "cb8153cf802b369c",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -183,9 +190,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "a6ebc7e020f70763",
+  "active": "cb8153cf802b369c",
   "lastOpenFiles": [
-    "architecture/Overview.md",
-    "README.md"
+    "README.md",
+    "workflows/ci-cd.md",
+    "workflows/Development-workflow.md",
+    "architecture/Backend-architecture.md",
+    "architecture/Overview.md"
   ]
 }
