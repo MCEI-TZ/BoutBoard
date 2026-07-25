@@ -47,11 +47,11 @@ Cross-cutting explanations of how subsystems work together. These describe _flow
 
 Short, numbered records explaining _why_ a non-obvious technical choice was made. Read these before proposing to change something that looks questionable at first glance — there may already be a documented reason.
 
-| Document                                | Status | Decision                                                              |
-| --------------------------------------- | ------ | --------------------------------------------------------------------- |
-| [[0001-monorepo-structure]]             | 🚧     | Single repo for frontend + backend instead of split repos             |
-| [[0002-native-websocket-over-socketio]] | 🚧     | Native WebSocket + STOMP instead of Socket.IO                         |
-| [[0003-configurable-rules-engine]]      | 🚧     | Scoring rules as configuration instead of hardcoded per-sport modules |
+| Document                                                                                | Status | Decision                                                              |
+| --------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------- |
+| [0001-monorepo-structure](decisions/0001-monorepo-structure.md)                         | 🚧     | Single repo for frontend + backend instead of split repos             |
+| [0002-native-websocket-over-socketio](decisions/0002-native-websocket-over-socketio.md) | 🚧     | Native WebSocket + STOMP instead of Socket.IO                         |
+| [0003-configurable-rules-engine](decisions/0003-configurable-rules-engine.md)           | 🚧     | Scoring rules as configuration instead of hardcoded per-sport modules |
 
 New decisions are added as new numbered files — existing ones are never edited after acceptance. If a decision is later reversed, a new ADR supersedes it and says so explicitly; the old one stays as history.
 
@@ -59,44 +59,44 @@ New decisions are added as new numbered files — existing ones are never edited
 
 One file per top-level package under `backend/src/main/java/.../boutboard/`. Each explains that folder's responsibility, what belongs in it, and what doesn't.
 
-| Document       | Status |
-| -------------- | ------ |
-| [[config]]     | 🚧     |
-| [[controller]] | 🚧     |
-| [[dto]]        | 🚧     |
-| [[entity]]     | 🚧     |
-| [[mapper]]     | 🚧     |
-| [[repository]] | 🚧     |
-| [[service]]    | 🚧     |
-| [[websocket]]  | 🚧     |
-| [[exception]]  | 🚧     |
+| Document                            | Status |
+| ----------------------------------- | ------ |
+| [config](backend/config.md)         | 🚧     |
+| [controller](backend/controller.md) | 🚧     |
+| [dto](backend/dto.md)               | 🚧     |
+| [entity](backend/entity.md)         | 🚧     |
+| [mapper](backend/mapper.md)         | 🚧     |
+| [repository](backend/repository.md) | 🚧     |
+| [service](backend/service.md)       | 🚧     |
+| [websocket](backend/websocket.md)   | 🚧     |
+| [exception](backend/exception.md)   | 🚧     |
 
 ### Frontend
 
 One file per top-level folder under `frontend/src/`.
 
-| Document        | Status |
-| --------------- | ------ |
-| [[components]]  | 🚧     |
-| [[views]]       | 🚧     |
-| [[router]]      | 🚧     |
-| [[stores]]      | 🚧     |
-| [[services]]    | 🚧     |
-| [[composables]] | 🚧     |
+| Document                               | Status |
+| -------------------------------------- | ------ |
+| [components](frontend/components.md)   | 🚧     |
+| [views](frontend/views.md)             | 🚧     |
+| [router](frontend/router.md)           | 🚧     |
+| [stores](frontend/stores.md)           | 🚧     |
+| [services](frontend/services.md)       | 🚧     |
+| [composables](frontend/composables.md) | 🚧     |
 
 ### API
 
-| Document             | Status | Covers                                                          |
-| -------------------- | ------ | --------------------------------------------------------------- |
-| [[Rest-api]]         | 🚧     | Endpoint reference and REST conventions                         |
-| [[Bruno-collection]] | 🚧     | How the Bruno collection is organized and how to run it locally |
+| Document                                    | Status | Covers                                                          |
+| ------------------------------------------- | ------ | --------------------------------------------------------------- |
+| [Rest-api](api/Rest-api.md)                 | 🚧     | Endpoint reference and REST conventions                         |
+| [Bruno-collection](api/Bruno-collection.md) | 🚧     | How the Bruno collection is organized and how to run it locally |
 
 ### Workflows
 
-| Document                 | Status | Covers                                              |
-| ------------------------ | ------ | --------------------------------------------------- |
-| [[Development-workflow]] | 🚧     | Local setup, branching strategy, commit conventions |
-| [[ci-cd]]                | 🚧     | GitHub Actions pipeline: what runs on push/PR       |
+| Document                                                  | Status | Covers                                              |
+| --------------------------------------------------------- | ------ | --------------------------------------------------- |
+| [Development-workflow](workflows/Development-workflow.md) | 🚧     | Local setup, branching strategy, commit conventions |
+| [ci-cd](workflows/ci-cd.md)                               | 🚧     | GitHub Actions pipeline: what runs on push/PR       |
 
 ## How the documentation is structured
 
