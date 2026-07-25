@@ -31,16 +31,17 @@ Status legend: ✅ available · 🚧 planned, not yet written · 🔮 describes 
 
 Cross-cutting explanations of how subsystems work together. These describe _flows_, not folders.
 
-| Document                  | Status | Covers                                                                                 |
-| ------------------------- | ------ | -------------------------------------------------------------------------------------- |
-| [[Overview]]              | 🚧     | Full system architecture: how frontend, backend, database, and deployment fit together |
-| [[Backend-architecture]]  | 🚧     | Package relationships and layering inside the Spring Boot app                          |
-| [[Frontend-architecture]] | 🚧     | Vue app structure, state management, and data flow                                     |
-| [[Request-lifecycle]]     | 🚧     | A REST request's path: controller → service → repository → database                    |
-| [[websocket]]             | 🚧     | A score/penalty event's path over STOMP, from operator action to spectator screen      |
-| [[Database]]              | 🚧     | Schema design, JPA entity mapping, Flyway migration strategy                           |
-| `authentication.md`       | 🔮     | Planned Spring Security + JWT design (not implemented yet)                             |
-| [[Deployment]]            | 🚧     | Docker/Compose packaging and deployment topology                                       |
+| Document                                                      | Status | Covers                                                                                 |
+| ------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------- |
+| [Overview](../architecture/overview.md)                       | 🚧     | Full system architecture: how frontend, backend, database, and deployment fit together |
+| [[architecture/Backend-architecture\|Backend-architecture]]   | 🚧     | Package relationships and layering inside the Spring Boot app                          |
+| [[architecture/Frontend-architecture\|Frontend-architecture]] | 🚧     | Vue app structure, state management, and data flow                                     |
+| [[Request-lifecycle]]                                         | 🚧     | A REST request's path: controller → service → repository → database                    |
+| [[websocket]]                                                 | 🚧     | A score/penalty event's path over STOMP, from operator action to spectator screen      |
+| [[Database]]                                                  | 🚧     | Schema design, JPA entity mapping, Flyway migration strategy                           |
+| `authentication.md`                                           | 🔮     | Planned Spring Security + JWT design (not implemented yet)                             |
+| [[Deployment]]                                                | 🚧     | Docker/Compose packaging and deployment topology                                       |
+|                                                               |        |                                                                                        |
 
 ### Decisions
 
