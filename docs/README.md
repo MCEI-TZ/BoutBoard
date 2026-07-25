@@ -33,7 +33,7 @@ Cross-cutting explanations of how subsystems work together. These describe _flow
 
 | Document                                                       | Status | Covers                                                                                 |
 | -------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------- |
-| [Overview](architecture/Overview.md)                           | 🚧     | Full system architecture: how frontend, backend, database, and deployment fit together |
+| [Overview](architecture/Overview.md)                           | ✅      | Full system architecture: how frontend, backend, database, and deployment fit together |
 | [Backend-architecture](architecture/Backend-architecture.md)   | 🚧     | Package relationships and layering inside the Spring Boot app                          |
 | [Frontend-architecture](architecture/Frontend-architecture.md) | 🚧     | Vue app structure, state management, and data flow                                     |
 | [Request-lifecycle](architecture/Request-lifecycle.md)         | 🚧     | A REST request's path: controller → service → repository → database                    |
