@@ -1,5 +1,5 @@
 # ADR-XXXX: Short, descriptive title
-
+#decisions 
 - **Status**: Proposed | Accepted | Superseded by ADR-YYYY
 - **Date**: YYYY-MM-DD
 

@@ -1,5 +1,5 @@
 # Architecture decision records (ADRs)
-#architecture #decisions 
+#decisions 
 
 This folder records _why_ BoutBoard is built the way it is, not just _what_ it does. Each file is a short, numbered record of one non-obvious technical decision: the problem, the choice made, its trade-offs, and what was rejected instead.
 
