@@ -154,12 +154,12 @@ To keep expectations calibrated for contributors — this reflects the current s
 
 ## Where to go next
 
-| I want to understand...                  | Go to                                             |
-| ---------------------------------------- | ------------------------------------------------- |
-| The backend's internal package structure | [Backend-architecture](Backend-architecture.md)   |
-| The frontend's internal structure        | [Frontend-architecture](Frontend-architecture.md) |
-| A REST request in full detail            | [Request-lifecycle](Request-lifecycle.md)         |
-| A live scoring event in full detail      | [Websocket-flow](Websocket-flow.md)               |
-| The database schema                      | [Database](Database.md)                           |
-| How this gets deployed                   | [Deployment](Deployment.md)                       |
-| Why a specific decision was made         | `../decisions/`                                   |
+| I want to understand...                  | Go to                                             |     |
+| ---------------------------------------- | ------------------------------------------------- | --- |
+| The backend's internal package structure | [Backend-architecture](Backend-architecture.md)   |     |
+| The frontend's internal structure        | [Frontend-architecture](Frontend-architecture.md) |     |
+| A REST request in full detail            | [Request-lifecycle](Request-lifecycle.md)         |     |
+| A live scoring event in full detail      | [Websocket-flow](Websocket-flow.md)               |     |
+| The database schema                      | [Database](Database.md)                           |     |
+| How this gets deployed                   | [Deployment](Deployment.md)                       |     |
+| Why a specific decision was made         | [Decisions](../decisions/README.md)               |     |
