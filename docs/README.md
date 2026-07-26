@@ -8,20 +8,20 @@ The documentation is organized so that each question a contributor might have ma
 
 Pick the row that matches what you're trying to do.
 
-| I want to...                                                                   | Start here                          |
-| ------------------------------------------------------------------------------ | ----------------------------------- |
-| Understand the system before touching any code                                 | `architecture/overview.md`          |
-| Know why a technical choice was made a certain way                             | `decisions/`                        |
-| Add or modify backend code and need to know where it belongs                   | `backend/`                          |
-| Add or modify frontend code and need to know where it belongs                  | `frontend/`                         |
-| Understand how a score event travels from the operator to the spectator screen | `architecture/websocket-flow.md`    |
-| Understand a REST request's path through the backend                           | `architecture/request-lifecycle.md` |
-| Call or test an endpoint without reading controller code                       | `api/rest-api.md`                   |
-| Set up the project locally and open a pull request                             | `workflows/development-workflow.md` |
-| Understand what happens after a PR is merged                                   | `workflows/ci-cd.md`                |
-| Understand how the app is packaged and run in production                       | `architecture/deployment.md`        |
+| I want to...                                                                   | Start here                           |
+| ------------------------------------------------------------------------------ | ------------------------------------ |
+| Understand the system before touching any code                                 | [Overview](architecture/Overview.md) |
+| Know why a technical choice was made a certain way                             | [Decisions](#Decisions)              |
+| Add or modify backend code and need to know where it belongs                   | [Backend](#Backend)                  |
+| Add or modify frontend code and need to know where it belongs                  | [Frontend](#Frontend)                |
+| Understand how a score event travels from the operator to the spectator screen | `architecture/websocket-flow.md`     |
+| Understand a REST request's path through the backend                           | `architecture/request-lifecycle.md`  |
+| Call or test an endpoint without reading controller code                       | `api/rest-api.md`                    |
+| Set up the project locally and open a pull request                             | `workflows/development-workflow.md`  |
+| Understand what happens after a PR is merged                                   | `workflows/ci-cd.md`                 |
+| Understand how the app is packaged and run in production                       | `architecture/deployment.md`         |
 
-If you're new to the project entirely, read `architecture/overview.md` first — everything else assumes that context.
+If you're new to the project entirely, read [Overview](architecture/Overview.md) first — everything else assumes that context.
 
 ## Documentation map
 
@@ -33,10 +33,10 @@ Cross-cutting explanations of how subsystems work together. These describe _flow
 
 | Document                                                       | Status | Covers                                                                                 |
 | -------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------- |
-| [Overview](architecture/Overview.md)                           | ✅      | Full system architecture: how frontend, backend, database, and deployment fit together |
+| [Overview](architecture/Overview.md) ^Overview                 | ✅      | Full system architecture: how frontend, backend, database, and deployment fit together |
 | [Backend-architecture](architecture/Backend-architecture.md)   | 🚧     | Package relationships and layering inside the Spring Boot app                          |
 | [Frontend-architecture](architecture/Frontend-architecture.md) | 🚧     | Vue app structure, state management, and data flow                                     |
-| [Request-lifecycle](architecture/Request-lifecycle.md)         | 🚧     | A REST request's path: controller → service → repository → database                    |
+| [Request-lifecycle](architecture/Request-lifecycle.md)         | ✅      | A REST request's path: controller → service → repository → database                    |
 | [Websocket-flow](architecture/Websocket-flow.md)               | ✅      | A score/penalty event's path over STOMP, from operator action to spectator screen      |
 | [Database](architecture/Database.md)                           | 🚧     | Schema design, JPA entity mapping, Flyway migration strategy                           |
 | [Authentication](architecture/Authentication.md)               | 🔮     | Planned Spring Security + JWT design (not implemented yet)                             |
