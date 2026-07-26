@@ -16,7 +16,7 @@ Pick the row that matches what you're trying to do.
 | Add or modify frontend code and need to know where it belongs                  | [Frontend](#Frontend)                |
 | Understand how a score event travels from the operator to the spectator screen | `architecture/websocket-flow.md`     |
 | Understand a REST request's path through the backend                           | `architecture/request-lifecycle.md`  |
-| Call or test an endpoint without reading controller code                       | `api/rest-api.md`                    |
+| Call or test an endpoint without reading controller code                       | [API](#API)                          |
 | Set up the project locally and open a pull request                             | `workflows/development-workflow.md`  |
 | Understand what happens after a PR is merged                                   | `workflows/ci-cd.md`                 |
 | Understand how the app is packaged and run in production                       | `architecture/deployment.md`         |
@@ -38,7 +38,7 @@ Cross-cutting explanations of how subsystems work together. These describe _flow
 | [Frontend-architecture](architecture/Frontend-architecture.md) | 🚧     | Vue app structure, state management, and data flow                                     |
 | [Request-lifecycle](architecture/Request-lifecycle.md)         | ✅      | A REST request's path: controller → service → repository → database                    |
 | [Websocket-flow](architecture/Websocket-flow.md)               | ✅      | A score/penalty event's path over STOMP, from operator action to spectator screen      |
-| [Database](architecture/Database.md)                           | 🚧     | Schema design, JPA entity mapping, Flyway migration strategy                           |
+| [Database](architecture/Database.md)                           | ✅      | Schema design, JPA entity mapping, Flyway migration strategy                           |
 | [Authentication](architecture/Authentication.md)               | 🔮     | Planned Spring Security + JWT design (not implemented yet)                             |
 | [Deployment](architecture/Deployment.md)                       | 🚧     | Docker/Compose packaging and deployment topology                                       |
 |                                                                |        |                                                                                        |
