@@ -1,5 +1,6 @@
 # `config/`
 #backend 
+Location: `backend/src/main/java/com/mcei-tz/boutboard/config/`
 
 ## Purpose
 
