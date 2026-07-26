@@ -61,15 +61,15 @@ One file per top-level package under `backend/src/main/java/.../boutboard/`. Eac
 
 | Document                            | Status |
 | ----------------------------------- | ------ |
-| [config](backend/config.md)         | 🚧     |
-| [controller](backend/controller.md) | 🚧     |
-| [dto](backend/dto.md)               | 🚧     |
-| [entity](backend/entity.md)         | 🚧     |
-| [mapper](backend/mapper.md)         | 🚧     |
-| [repository](backend/repository.md) | 🚧     |
-| [service](backend/service.md)       | 🚧     |
-| [websocket](backend/websocket.md)   | 🚧     |
-| [exception](backend/exception.md)   | 🚧     |
+| [config](backend/config.md)         | ✅      |
+| [controller](backend/controller.md) | ✅      |
+| [dto](backend/dto.md)               | ✅      |
+| [entity](backend/entity.md)         | ✅      |
+| [mapper](backend/mapper.md)         | ✅      |
+| [repository](backend/repository.md) | ✅      |
+| [service](backend/service.md)       | ✅      |
+| [websocket](backend/websocket.md)   | ✅      |
+| [exception](backend/exception.md)   | ✅      |
 
 ### Frontend
 
@@ -77,12 +77,12 @@ One file per top-level folder under `frontend/src/`.
 
 | Document                               | Status |
 | -------------------------------------- | ------ |
-| [components](frontend/components.md)   | 🚧     |
-| [views](frontend/views.md)             | 🚧     |
-| [router](frontend/router.md)           | 🚧     |
-| [stores](frontend/stores.md)           | 🚧     |
-| [services](frontend/services.md)       | 🚧     |
-| [composables](frontend/composables.md) | 🚧     |
+| [components](frontend/components.md)   | ✅      |
+| [views](frontend/views.md)             | ✅      |
+| [router](frontend/router.md)           | ✅      |
+| [stores](frontend/stores.md)           | ✅      |
+| [services](frontend/services.md)       | ✅      |
+| [composables](frontend/composables.md) | ✅      |
 
 ### API
 
@@ -118,7 +118,7 @@ graph TD
     Workflows -.governs contributions to.-> Frontend
 ```
 
-Solid arrows mean "contains". Dashed arrows mean "reads from" — for example, `websocket-flow.md` in `architecture/` will explain the event flow in prose and diagrams, and point into `backend/websocket.md` for the folder-level detail, rather than duplicating it.
+Solid arrows mean "contains". Dashed arrows mean "reads from" — for example, [Websocket-flow](architecture/Websocket-flow.md) in `architecture/` will explain the event flow in prose and diagrams, and point into [websocket](backend/websocket.md) for the folder-level detail, rather than duplicating it.
 
 ## Documentation conventions
 
