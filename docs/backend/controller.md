@@ -1,7 +1,7 @@
 # `controller/`
 #backend 
 
-Location: `backend/src/main/java/com/mcei-tz/boutboard/controller/`
+Location: `backend/src/main/java/com/mcei_tz/boutboard/controller/`
 
 ## Purpose
 

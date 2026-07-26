@@ -1,6 +1,6 @@
 # `entity/`
 #backend 
-Location: `backend/src/main/java/com/mcei-tz/boutboard/entity/`
+Location: `backend/src/main/java/com/mcei_tz/boutboard/entity/`
 
 ## Purpose
 

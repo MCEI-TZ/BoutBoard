@@ -1,6 +1,6 @@
 # `dto/`
 #backend 
-Location: `backend/src/main/java/com/mcei-tz/boutboard/dto/`
+Location: `backend/src/main/java/com/mcei_tz/boutboard/dto/`
 
 ## Purpose
 
