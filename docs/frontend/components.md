@@ -1,7 +1,7 @@
 # `components/`
-
-Location: `frontend/boutboard_app/src/components/`
 #frontend 
+Location: `frontend/boutboard_app/src/components/`
+
 ## Purpose
 
 Reusable, presentation-focused pieces of UI — the building blocks that `views/` assemble into full screens. A component here should be usable in more than one context without knowing which screen it's on.

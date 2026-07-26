@@ -1,30 +1,30 @@
-# `router/`
+# `stores/`
 #frontend 
-Location: `frontend/boutboard_app/src/router/`
+Location: `frontend/boutboard_app/src/stores/`
 
 ## Purpose
 
-Vue Router configuration — the map between URL paths and `views/`. Answers "what shows up at this URL?" and nothing else.
+Pinia stores — shared, reactive state that more than one component needs to read or react to: the current match's score, the clock, connection status to the WebSocket. If two components need to see the same value change at the same time, that value belongs in a store, not in a component's local state.
 
 ## Responsibilities
 
-- Defining routes and mapping them to views.
-- Route parameters (e.g. `/display/:matchId`).
-- Navigation guards — currently none; will gate Admin Panel routes once authentication exists (see `../architecture/authentication.md`).
+- Holding shared reactive state.
+- Exposing actions that `views/` and `components/` call to trigger a state change (e.g. `startMatch()`, `awardPoint()`).
+- Calling `services/` to fetch or send data, and updating state based on the result — including state updates driven by incoming STOMP messages.
 
 ## What belongs here
 
-- `index.js` (or `index.ts`) defining the route table: `/admin` → `MatchControlView`, `/display/:matchId` → `DisplayView`, and so on.
-- Route guards, once they exist.
+- One store per domain concern: `matchStore.js` (current match, score, clock), `participantsStore.js`, `judgesStore.js`. An `authStore.js` is planned alongside authentication.
 
 ## What doesn't belong here
 
-- Business logic or data fetching — a route definition should only say _which component_ renders at _which path_, not fetch or prepare data for it. Data fetching happens once the view mounts, via `stores/`.
+- Direct HTTP or STOMP client code — a store calls `services/` to perform the actual communication; it doesn't construct requests or manage the socket connection itself. This keeps "what changed" (store) separate from "how we found out" (service).
+- DOM manipulation or component-specific rendering logic.
 
 ## Naming conventions
 
-A single `index.js` is sufficient at this project's current size. If the route table grows large enough to be hard to scan, it can be split by feature area (e.g. `adminRoutes.js`, `displayRoutes.js`) and combined in `index.js` — not necessary yet.
+Following Pinia convention: exposed as `useMatchStore()`, `useParticipantsStore()`, etc.
 
 ## Interactions
 
-Maps paths to `views/`. The distinction between the `/admin` route (protected, operator-facing) and `/display/:matchId` (public, read-only) is a routing-level concern that will matter once authentication is introduced.
+The hub between the UI and the outside world: read by `views/` and `components/`, populated and updated by calling `services/` — including reacting to STOMP messages pushed from the backend without an explicit call, since a subscription callback updates store state the same way an action does.
