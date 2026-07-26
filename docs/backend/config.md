@@ -17,7 +17,7 @@ Holds Spring `@Configuration` classes — code that wires up beans and framework
 
 - `WebSocketConfig` — registers the STOMP endpoint and message broker used by the `websocket/` layer.
 - `CorsConfig` — allowed origins, methods, headers for the REST API.
-- `SecurityConfig` _(planned)_ — see `../architecture/authentication.md`.
+- `SecurityConfig` _(planned)_ — see [Authentication](../architecture/Authentication.md).
 - `OpenApiConfig` — API documentation setup, if added.
 
 ## What doesn't belong here

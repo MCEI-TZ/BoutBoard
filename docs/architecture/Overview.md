@@ -27,7 +27,7 @@ graph LR
     FE -->|renders live scoreboard| Spectators
 ```
 
-A **Judge** actor is planned but not yet implemented — see `authentication.md` and decision 0003.
+A **Judge** actor is planned but not yet implemented — see [Authentication](Authentication.md) and decision 0003.
 
 ## Architectural principles
 
@@ -134,7 +134,7 @@ Full detail: [Websocket-flow](Websocket-flow.md).
 Brief pointers — each has its own document.
 
 - **Database & migrations**: schema evolves through versioned Flyway scripts, never manual changes to a running database. See [Database](Database.md).
-- **Authentication** _(planned)_: role-based access (Operator vs read-only) via Spring Security + JWT. Not implemented in the current scope. See `authentication.md`.
+- **Authentication** _(planned)_: role-based access (Operator vs read-only) via Spring Security + JWT. Not implemented in the current scope. See [Authentication](Authentication.md).
 - **Deployment**: single `docker-compose.yml` orchestrating frontend, backend, and database containers. See [Deployment](Deployment.md).
 - **CI/CD**: GitHub Actions builds and tests both frontend and backend on every push and pull request. See [ci-cd](../workflows/ci-cd.md).
 

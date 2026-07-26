@@ -24,7 +24,7 @@ BoutBoard is a single Git repository containing `backend/`, `frontend/`, and `do
 
 ### Negative / trade-offs
 
-- CI naively configured would rebuild and retest both frontend and backend on every push, even when only one changed. Mitigated with path-based triggers in GitHub Actions (see `../workflows/ci-cd.md`) so only the affected part runs.
+- CI naively configured would rebuild and retest both frontend and backend on every push, even when only one changed. Mitigated with path-based triggers in GitHub Actions (see [ci-cd](../workflows/ci-cd.md)) so only the affected part runs.
 - If the project ever grows to have separate frontend and backend teams with independent release cadences, a monorepo makes that separation harder than starting with two repos would have. Not a current concern at this project's scale, but worth revisiting if that changes.
 - Repo size and commit history grow faster than either component would alone.
 

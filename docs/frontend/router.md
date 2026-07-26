@@ -10,7 +10,7 @@ Vue Router configuration — the map between URL paths and `views/`. Answers "wh
 
 - Defining routes and mapping them to views.
 - Route parameters (e.g. `/display/:matchId`).
-- Navigation guards — currently none; will gate Admin Panel routes once authentication exists (see `../architecture/authentication.md`).
+- Navigation guards — currently none; will gate Admin Panel routes once authentication exists (see [Authentication](../architecture/Authentication.md)).
 
 ## What belongs here
 
