@@ -31,7 +31,7 @@ A **Judge** actor is planned but not yet implemented — see [Authentication](Au
 
 ## Architectural principles
 
-These are the recurring decisions that shape every layer of the system. Each is backed by a full ADR in `decisions/`; this is the short version.
+These are the recurring decisions that shape every layer of the system. Each is backed by a full ADR in [Decisions](../decisions/README.md) this is the short version.
 
 | Principle                                      | What it means in practice                                                                                                                                                                        | ADR                                                         |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |

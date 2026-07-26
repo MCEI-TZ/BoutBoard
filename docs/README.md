@@ -37,9 +37,9 @@ Cross-cutting explanations of how subsystems work together. These describe _flow
 | [Backend-architecture](architecture/Backend-architecture.md)   | 🚧     | Package relationships and layering inside the Spring Boot app                          |
 | [Frontend-architecture](architecture/Frontend-architecture.md) | 🚧     | Vue app structure, state management, and data flow                                     |
 | [Request-lifecycle](architecture/Request-lifecycle.md)         | 🚧     | A REST request's path: controller → service → repository → database                    |
-| [websocket](backend/websocket.md)                              | 🚧     | A score/penalty event's path over STOMP, from operator action to spectator screen      |
+| [Websocket-flow](architecture/Websocket-flow.md)               | ✅      | A score/penalty event's path over STOMP, from operator action to spectator screen      |
 | [Database](architecture/Database.md)                           | 🚧     | Schema design, JPA entity mapping, Flyway migration strategy                           |
-| `authentication.md`                                            | 🔮     | Planned Spring Security + JWT design (not implemented yet)                             |
+| [Authentication](architecture/Authentication.md)               | 🔮     | Planned Spring Security + JWT design (not implemented yet)                             |
 | [Deployment](architecture/Deployment.md)                       | 🚧     | Docker/Compose packaging and deployment topology                                       |
 |                                                                |        |                                                                                        |
 
