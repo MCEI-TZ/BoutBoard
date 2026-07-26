@@ -1,6 +1,6 @@
 # `views/`
 #frontend 
-Location: `frontend/src/views/`
+Location: `frontend/boutboard_app/src/views/`
 
 ## Purpose
 
