@@ -49,9 +49,9 @@ Short, numbered records explaining _why_ a non-obvious technical choice was made
 
 | Document                                                                                | Status | Decision                                                              |
 | --------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------- |
-| [0001-monorepo-structure](decisions/0001-monorepo-structure.md)                         | 🚧     | Single repo for frontend + backend instead of split repos             |
-| [0002-native-websocket-over-socketio](decisions/0002-native-websocket-over-socketio.md) | 🚧     | Native WebSocket + STOMP instead of Socket.IO                         |
-| [0003-configurable-rules-engine](decisions/0003-configurable-rules-engine.md)           | 🚧     | Scoring rules as configuration instead of hardcoded per-sport modules |
+| [0001-monorepo-structure](decisions/0001-monorepo-structure.md)                         | ✅      | Single repo for frontend + backend instead of split repos             |
+| [0002-native-websocket-over-socketio](decisions/0002-native-websocket-over-socketio.md) | ✅      | Native WebSocket + STOMP instead of Socket.IO                         |
+| [0003-configurable-rules-engine](decisions/0003-configurable-rules-engine.md)           | ✅      | Scoring rules as configuration instead of hardcoded per-sport modules |
 
 New decisions are added as new numbered files — existing ones are never edited after acceptance. If a decision is later reversed, a new ADR supersedes it and says so explicitly; the old one stays as history.
 
